@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+.header {
+  background-color: #0f1521;
+  padding: 20px 0;
+  text-align: center;
+}
+.header nav {
+  justify-content: center;
+}
+.header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header nav ul li {
+  padding: 10px 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.header nav ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.header nav ul li:hover::before {
+  width: 100%;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.lowheader {
+  padding: 20px 0;
+  background-color: #f70385;
+}
+.lowheader h1 {
+  color: white;
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Banner */
+.banner {
+  background-color: white;
+  padding: 80px 60px 80px 120px;
+}
+
+.banner .container {
+  display: flex;
+}
+
+.banner .container .content {
+  width: 80%;
+  margin: 80px 0px;
+}
+
+.banner .container .content p {
+  color: #121212a8;
+  font-size: 17px;
+  line-height: 30px;
+  padding-bottom: 40px;
+}
+
+.banner .container .content a {
+  text-decoration: none;
+  border: 1px solid #f70385;
+  padding: 15px 30px;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.banner .container .content a:hover {
+  background-color: #f70385;
+  color: white;
+  transition: 0.4s;
+}
+
+.banner .container .img {
+  width: 100%;
+  text-align: center;
+}
+
+.banner .container img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.banner .container img:hover {
+  transform: scale(105%);
+  transition: 0.4s;
+}
+
+/* Use */
+.used {
+  background-color: rgb(128 128 128 / 7%);
+  padding: 70px 0px;
+  text-align: center;
+}
+
+.used h1 {
+  color: black;
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.used .need {
+  display: inline-block;
+}
+
+.used .need .box {
+  color: black;
+  background-color: white;
+  flex: 1;
+  border: 2px solid #f70385;
+  display: inline-block;
+  margin: 10px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.used .need .box:hover {
+  box-shadow: 0 0 5px #00000087;
+  transition: 0.5s;
+  transform: scale(110%);
+  cursor: pointer;
+  color: #f70385c5;
+  border: 2px solid black;
+}
+
+.used .need .box i {
+  margin-bottom: 20px;
+  font-size: xxx-large;
+}
+
+/* History */
+.history {
+  background-color: white;
+}
+
+.history .container {
+  display: flex;
+}
+
+.history .container .img {
+  width: 100%;
+  height: 750px;
+}
+
+.history .container img {
+  width: 100%;
+  height: 100%;
+}
+
+.history .container .content {
+  width: 100%;
+  padding: 100px 30px 0 30px;
+}
+.history .container .content h1 {
+  margin-bottom: 30px;
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.history .container .content .subheading {
+  color: #6daac0;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.history .container .content .lowerbody {
+  color: #121212a8;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.history .container .content .lowerbody span {
+  color: black;
+  font-size: 17px;
+  line-height: 30px;
+  font-size: large;
+}
+
+.history .container .content a {
+  text-decoration: none;
+  border: 1px solid #f70385;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 15px 30px;
+}
+
+.history .container .content a:hover {
+  background-color: #f70385;
+  color: white;
+  transition: 0.4s;
+}
+
+/* Tag Section */
+.tag {
+  padding: 80px 45px 100px 45px;
+}
+
+.tag h1 {
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+.tag .taghadbar {
+  text-align: center;
+  color: #f70385;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.allcontent {
+  display: flex;
+  justify-content: center;
+}
+
+.allcontent .container {
+  width: 100%;
+  margin: 10px;
+}
+
+.allcontent .container h1 {
+  text-align: center;
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+.allcontent .container table {
+  width: 100%;
+  border: 1px solid #f703854b;
+  border-collapse: collapse;
+}
+
+.allcontent .container th,
+.allcontent .container td {
+  border: 1px solid #f703854b;
+  padding: 10px;
+}
+
+.allcontent .container .FormInput {
+  margin-top: 50px;
+}
+
+/* Video Section */
+.mainvideo {
+  width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+.mainvideo video {
+  width: 100%;
+  height: auto;
+  border-radius:10px;
+}
+
+.mainvideo .content {
+  padding: 30px;
+  position: absolute;
+  right: 4%;
+  top: 5%;
+  width: 20%;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.536);
+}
+
+.mainvideo .content h1 {
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.mainvideo .content p {
+  line-height: 30px;
+}
+
+/* Audio Section */
+.audiosec {
+  display: flex;
+  background-color: rgb(128 128 128 / 5%);
+  padding: 70px 80px;
+}
+
+.audiosec .container {
+  flex: 1;
+}
+
+.audiosec .container audio {
+  width: 90%;
+  margin-top: 60px;
+}
+
+.audiosec .container .content {
+  line-height: 35px;
+  color: black;
+}
+
+.audiosec .container .content h1 {
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.audiosec .container content p {
+  text-align: justify;
+}
+
+/* Contact Section */
+.contactsec {
+  display: flex;
+  padding: 100px;
+}
+
+.contactsec .container {
+  flex: 1;
+  margin: 20px;
+}
+
+form {
+  width: 100%;
+}
+
+.input {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 70%;
+  background: black;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 10px 0;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+
+.contactsec .container .content {
+  line-height: 35px;
+  color: black;
+}
+
+.contactsec .container h1 {
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactsec .container p {
+  text-align: justify;
+}
+
+/* Footer Section */
+.footersec .topfooter {
+  display: flex;
+  background-color: #0f1521;
+  padding: 60px 70px;
+  border-bottom: 3px solid #f70385;
+}
+
+.footersec .topfooter .container {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 100px;
+  color: white;
+}
+
+.footersec .topfooter .container h1 {
+  font-family: "Hubballi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.footersec .topfooter .container li {
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Hubballi", sans-serif;
+}
+
+.footersec .copyright p {
+  color: black;
+  text-align: center;
+  word-spacing: 2px;
+  padding: 40px;
+}
+.footersec .copyright a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
